@@ -94,13 +94,23 @@ main {
     text-align: left; /* Alinear el texto a la izquierda */
 }
 
+main p {
+    text-align: justify;
+}
+
 /* Estilos del video de inicio */
-#video_inicio {
-    width: 60vw; /* 60% del ancho de la ventana */
-    height: 50vh; /* 50% del alto de la ventana */
-    margin-top: 0px; /* Espacio de separación desde el borde superior */
-    margin-left: 0px; /* Margen izquierdo */
-    margin-bottom: 50px; /* Espacio de separación desde el borde superior */
+.video-container {
+    text-align: center; /* Alinea el video al centro */
+    width: calc(100% - 100px); /* Ancho igual al ancho de la ventana menos 100px de margen */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+}
+
+.video-container video {
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Ancho máximo de 600px */
+    height: 400px; /* Altura de 400px */
+    display: block; /* Muestra como bloque para alinear correctamente */
+    margin: 0 auto; /* Centrado horizontal */
 }
 
 /* Estilo para el contenedor del calendario */
@@ -191,6 +201,21 @@ button[type="submit"]:hover {
 .back-button:hover {
     text-decoration: underline; /* Subrayado al pasar el ratón */
 }
+
+.image-container {
+    text-align: center; /* Alinea la imagen al centro */
+    width: calc(100% - 100px); /* Ancho igual al ancho de la ventana menos 100px de margen */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+}
+
+.image-container img {
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Ancho máximo de 600px */
+    height: 400px; /* Altura de 400px */
+    display: block; /* Muestra como bloque para alinear correctamente */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
 
 /* Estilos del pie de página */
 footer {
