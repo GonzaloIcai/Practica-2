@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RusticWoods</title>
+    <title>Iniciar Sesión - RusticWoods</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,18 +26,30 @@
     </header>
 
     <main>
-        <h1>Bienvenido a RusticWoods</h1>
-        <p>¡Encuentra la tranquilidad en nuestra casa rural!</p>
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="post">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fullname">Nombre completo:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <a href="index.html" class="back-button">Volver</a>
     </main>
 
-    <video autoplay muted loop id="video_inicio">
-        <source src="../resources/video_inicio.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
     <footer>
         <p>Derechos de autor &copy; 2024 Reservas RusticWoods</p>
     </footer>
-
 </body>
 </html>

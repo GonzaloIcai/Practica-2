@@ -3,10 +3,11 @@ body {
     font-family: Arial, sans-serif; /* Fuente predeterminada */
     margin: 0; /* Elimina el margen exterior */
     padding: 0; /* Elimina el relleno predeterminado */
-    overflow-y: auto; /* Permite el desplazamiento vertical si es necesario */
+    /*overflow-y: auto;  Permite el desplazamiento vertical si es necesario */
     min-height: 100vh; /* Altura mínima del cuerpo igual a la altura de la ventana */
     position: relative; /* Establece el contexto de posicionamiento */
 }
+
 
 /* Estilos del encabezado */
 header {
@@ -16,6 +17,7 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: space-between; /* Distribuye los elementos horizontalmente */
 }
+
 
 /* Estilos del contenedor del logo */
 .logo-container {
@@ -82,14 +84,122 @@ nav ul li a:hover::after {
     height: 40px; /* Altura de la imagen */
 }
 
+
+/* Estilos para el contenido principal */
+main {
+    max-width: calc(100vw - 100px); /* Ancho máximo igual al ancho de la ventana menos 100 píxeles de margen */
+    margin: 0px 50px 0; /* Centrar el contenido con margen en la parte superior y márgenes laterales de 50px */
+    padding: 20px; /* Espaciado interno */
+    overflow-y: auto; /* Hace que el contenido sea desplazable verticalmente si es necesario */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Estilos del video de inicio */
+#video_inicio {
+    width: 60vw; /* 60% del ancho de la ventana */
+    height: 50vh; /* 50% del alto de la ventana */
+    margin-top: 0px; /* Espacio de separación desde el borde superior */
+    margin-left: 0px; /* Margen izquierdo */
+    margin-bottom: 50px; /* Espacio de separación desde el borde superior */
+}
+
+/* Estilo para el contenedor del calendario */
+#calendar {
+    width: 300px; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el calendario en la página */
+}
+
+/* Estilo para la tabla que contiene el calendario */
+#calendar table {
+    width: 100%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Colapsar bordes de celdas */
+}
+
+/* Estilo para las cabeceras de columna y fila */
+#calendar th, #calendar td {
+    border: 1px solid #ccc; /* Bordes de las celdas */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilo para las cabeceras de columna */
+#calendar th {
+    background-color: #f2f2f2; /* Color de fondo de las cabeceras */
+}
+
+/* Estilo para las celdas de la tabla */
+#calendar td {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre las celdas */
+}
+
+/* Estilo para cuando se pasa el ratón sobre una celda */
+#calendar td:hover {
+    background-color: #e6e6e6; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+/* Estilo para una celda seleccionada */
+#calendar .selected {
+    background-color: #c99f5c; /* Color de fondo para la celda seleccionada */
+    color: #fff; /* Color del texto en la celda seleccionada */
+}
+
+/* Estilo para el día actual */
+#calendar .today {
+    background-color: #e0f7fa; /* Color de fondo para el día actual */
+}
+
+
+
+label {
+    display: block; /* Muestra como bloque para que se separe en líneas */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px; /* Radio de borde */
+}
+
+button[type="submit"] {
+    display: block; /* Muestra como bloque */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #c99f5c; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Radio de borde */
+    cursor: pointer; /* Cursor de ratón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+button[type="submit"]:hover {
+    background-color: #966b3e; /* Cambio de color de fondo al pasar el ratón */
+}
+
+.back-button {
+    display: block; /* Muestra como bloque */
+    margin-top: 20px; /* Margen superior */
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
 /* Estilos del pie de página */
 footer {
     background-color: #333; /* Color de fondo */
     color: #fff; /* Color del texto */
     text-align: center; /* Alineación centrada del texto */
     padding: 10px; /* Espaciado interno */
-    position: fixed; /* Fija el pie de página */
-    bottom: 0; /* Lo coloca en la parte inferior de la ventana */
     width: 100%; /* Ajusta el ancho al 100% */
     height: 10%; /* Altura del pie de página */
 }
+
+
