@@ -11,7 +11,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-color: #c99f5c; /* Color de fondo */
+    background-color: #273746 ; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
     display: flex; /* Utiliza flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente los elementos */
@@ -29,12 +29,14 @@ header {
 .logo-container img {
     height: 50px; /* Altura de la imagen */
     margin-right: 10px; /* Margen derecho */
+    filter: invert(100%); /* Invertir los colores de la imagen (cambiar de negro a blanco) */
 }
 
 /* Estilos del título del logo */
 .logo-container h1 {
     font-size: 24px; /* Tamaño de fuente */
     margin-right: 20px; /* Margen derecho */
+    color: #ffffff;
 }
 
 /* Estilos de la lista de navegación */
@@ -53,7 +55,7 @@ nav ul li {
 /* Estilos del enlace de la lista de navegación */
 nav ul li a {
     text-decoration: none; /* Elimina la subrayado del enlace */
-    color: #333; /* Color del texto */
+    color: #ffffff; /* Color del texto */
     position: relative; /* Establece el contexto de posicionamiento */
 }
 
@@ -70,7 +72,7 @@ nav ul li a::after {
     bottom: -2px; /* Establece la distancia desde abajo */
     width: 0; /* Ancho inicial */
     height: 2px; /* Altura */
-    background-color: #000; /* Color de la línea */
+    background-color: #ffffff; /* Color de la línea */
     transition: width 0.3s ease; /* Transición animada */
 }
 
@@ -82,6 +84,7 @@ nav ul li a:hover::after {
 /* Estilos del botón de inicio de sesión */
 .login-button img {
     height: 40px; /* Altura de la imagen */
+    filter: invert(100%); /* Invertir los colores de la imagen (cambiar de negro a blanco) */
 }
 
 
